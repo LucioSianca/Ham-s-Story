@@ -1,0 +1,392 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: auto;
+    height: auto;
+    font-family: "Noto Sans";
+  }
+  
+  #red-text {
+      color: #ff5a6e;
+  }
+  
+  #title-text-separator {
+    width: 5%;
+    margin-top: 1%;
+    border: solid 1px #ff5a6e;
+  }
+  
+
+  
+  
+  
+  #header {
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    min-height: 100px;
+  }
+  
+  
+  
+  
+  
+  
+  .active-header {
+    background-color: white;
+    color: black;
+  }
+  
+  .menu-link {
+    color: white;
+  }
+  
+  .active-menu-links {
+    color: black;
+  }
+  
+  #normal-header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    min-height: 100px;
+  }
+  
+  #header-img {
+    width: 250px;
+    margin-left: 15%;
+  }
+  
+
+  #nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+  }
+  
+  #nav-bar li {
+    padding: 10px;
+    margin: 12px;
+  }
+  
+  #nav-bar ul, a {
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  #responsive-header {
+    display: none;
+  }
+  
+  #image-button-black {
+    display: none;
+    border: none;
+  }
+  
+  #image-button-black:hover {
+    cursor: pointer;
+  }
+  
+  #image-button-black:focus {
+    outline: 0;
+  }
+  
+  
+  #hero-header {
+    
+    height: 100vh;
+    box-shadow: 3px 3px 2px #bebebe;
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+    text-align: center;
+    color: white;
+  
+    /* Background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://historia.nationalgeographic.com.es/medio/2021/11/09/ham-the-chimp_4a1d1ee0_1024x781.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  
+  
+
+  #hero-title {
+    font-size: 3.5em;
+  }
+  
+  #hero-text {
+    font-size: 1.3em;
+    margin-top: 2%;
+  }
+  
+  #hero-button {
+    border: solid 2px white;
+    background-color: inherit;
+    color: white;
+    margin-top: 6%;
+    width: 25%;
+    height: 55px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  
+  #hero-button:hover {
+    cursor: pointer;
+  }
+  
+  
+  
+
+  
+  #features-description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+    display: flex;
+    width: 60%;
+  }
+  
+  #features-description h1 {
+    font-size: 45px;
+  }
+  
+  #features-description p {
+    padding: 1%;
+    margin-top: 1%;
+  }
+  
+  #feature {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #bebebe;
+    box-shadow: 1px 2px 15px #bebebe;
+  }
+  
+  #feature img {
+    max-width: 30%;
+    max-height: 30%;
+    padding-top: 5%;
+  }
+  
+  #feature-title {
+    margin-top: 5%;
+  }
+  
+  #feature p {
+    width: 70%;
+    margin-top: 5%;
+  }
+  
+  #feature-button {
+    border: none;
+    margin-top: 30%;
+    width: 12vh;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #ff5a6e;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20%;
+  }
+  
+  #feature-button:hover {
+    background-color: #ff7b8b;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  #presentation-container {
+    display: flex;
+    flex-flow: column;
+  }
+  
+  #presentation-title-description {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    width: 60%;
+  }
+  
+  #presentation-title-description h1 {
+    font-size: 45px;
+  }
+  
+  #presentation-title-description p {
+    margin-top: 1%;
+  }
+  
+  #section-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-button {
+    border: none;
+    border-radius: 10px;
+    background-color: inherit;
+    box-shadow: 1px 2px 15px #bebebe;
+    padding: 15px;
+    width: 10%;
+    margin: 2%;
+    font-size: 15px;
+  }
+  
+  .product-button:hover {
+    cursor: pointer;
+  }
+  
+  .product-button:focus {
+    outline: 0;
+  }
+  
+  .product-button-active {
+    background-color: #ff5a6e;
+    color: white;
+  }
+  
+  
+  
+  
+  
+  #section-content-container {
+    margin: auto;
+    width: 75%;
+  }
+  
+  .product-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 2%;
+  }
+  
+  #content-image {
+    width: 100%;
+    height: 100%;
+    width: 70%;
+    height: auto;
+  }
+  
+  #content-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  #content-title-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 1%;
+  }
+  
+  #content-title-text p {
+    margin-top: 2%;
+  }
+  
+  .product-features-list {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    margin-top: 5%;
+  }
+  
+  #first-feature-list {
+    margin-top: 0;
+  }
+  
+  #product-feature-image {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 9%;
+  }
+
+ #lol-text{
+    color: white;
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+ @-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
